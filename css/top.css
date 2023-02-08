@@ -74,6 +74,7 @@ body, ul, li {
   .float-gird > *{
     float:left;
     box-sizing:border-box;
+    position: relative;
   }
   /* 라이브러리 끝 */
 
@@ -97,20 +98,36 @@ body, ul, li {
   /* logo 끝 */
 
   /* 메뉴바 - 메뉴1 시작 */
-  .menu-bar__menu-1 ul > li {
+.float-gird > li {
     width:25%;
   }
   
-  .menu-bar__menu-1 ul > li > a{
+.float-gird > li > a{
     font-size:1.5rem;
     text-align:center;
     padding:20px 0;
     border-radius:10px 10px 0 0;
   }
   
-  .menu-bar__menu-1 ul > li:hover > a{
+ .float-gird > li:hover > a{
     background-color:rgb(191, 199, 109);
     color:white;
   }
   
   /* 메뉴바 - 메뉴1 끝 */
+  
+  /* 하위메뉴 */
+  .sub_container{
+    background-color:rgb(191, 199, 109);
+    font-size:1rem;
+    color:white;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+.menu-bar__menu-1:hover .sub_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
