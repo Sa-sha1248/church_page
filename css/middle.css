@@ -4,8 +4,7 @@ body {font-family: Verdana, sans-serif;}
 img {vertical-align: middle;}
 
 #middle{
-    height: 100vh;
-    background-color: rgb(197, 177, 177);
+    height: fit-content;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -55,4 +54,18 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+#box_container{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.middle_box_item{
+  height: 300px;
+  width: 550px;
+  background-color: aliceblue;
+  margin: 20px 0px;
 }

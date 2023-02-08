@@ -14,9 +14,19 @@ body, ul, li {
 
 #top{
     height: auto;
-    width: fit-content;
+    width: auto;
     margin: 0 auto;
+    
+    max-width: 1200px;
 }
+
+#login{
+  display:block;
+  text-align:right;
+  padding: 5px 20px;
+}
+
+
 /* 폰트 시작 */
 @font-face {
     font-family: 'LotteMartDream';
@@ -50,8 +60,6 @@ body, ul, li {
   .con {
     margin-left:auto;
     margin-right:auto;
-    
-    max-width: 1200px;
   }
 
   .text-align-center {
@@ -70,9 +78,6 @@ body, ul, li {
   /* 라이브러리 끝 */
 
   /* 커스텀 시작 */
-  .con-min-width {
-    min-width:100vw;
-  }
   
   .con {
     width:auto;

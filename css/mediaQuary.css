@@ -1,0 +1,15 @@
+@media (max-width: 1200px) {
+    .middle_box_item{
+        width: 45vw;
+      }
+}
+
+@media (max-width: 750px) {
+    #box_container{
+        grid-template-columns: none;
+      }
+      
+      .middle_box_item{
+        width: 90vw;
+      }
+}
